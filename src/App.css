@@ -1,7 +1,7 @@
 /* src/App.css */
 body {
     font-family: 'Roboto Mono', monospace;
-    background-color: #f0f0f0;
+    background-color: #e0e0e0;
     color: #333;
     margin: 0;
     padding: 2rem;
@@ -10,8 +10,8 @@ body {
     align-items: center;
     min-height: 100vh;
     background-image:
-        linear-gradient(to right, #e0e0e0 1px, transparent 1px),
-        linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+        linear-gradient(to right, #c0c0c0 1px, transparent 1px),
+        linear-gradient(to bottom, #c0c0c0 1px, transparent 1px);
     background-size: 40px 40px; /* Increased horizontal size to 40px */
     background-position: center;
 }

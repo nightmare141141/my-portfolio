@@ -23,9 +23,6 @@ const Diagram = () => {
             <div className="small-block back-end">
                 <img src={front} alt="Design" />
             </div>
-            <div className="small-block i-try">
-                <img src={clean} alt="Design" />
-            </div>
             <div className="main-image-block">
                 <img src={profileImage} alt="Mansour Naderi" />
             </div>
