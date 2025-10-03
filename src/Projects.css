@@ -1,0 +1,74 @@
+/* src/Projects.css */
+.projects-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.project-card-container {
+    position: relative;
+    /* Create a semi-transparent, blurred effect */
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: left;
+    transform: rotate(1deg); /* Slight rotation for a "sticky note" feel */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card-container:nth-child(2n) {
+    transform: rotate(-1deg); /* Alternate rotation for a more random look */
+}
+
+.project-card-container:hover {
+    transform: translateY(-5px) rotate(0deg); /* Lifts and straightens on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+.project-image-container {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.project-content h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.project-content p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.learn-more-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}

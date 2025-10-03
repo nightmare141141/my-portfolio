@@ -1,3 +1,4 @@
+/* src/App.css */
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: #f0f0f0;
@@ -8,6 +9,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image:
+        linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+        linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+    background-size: 40px 40px; /* Increased horizontal size to 40px */
+    background-position: center;
 }
 
 .container {
@@ -16,7 +22,7 @@ body {
     gap: 2rem;
     max-width: 1200px;
     width: 100%;
-    align-items: center; /* This centers the content vertically */
+    align-items: center;
 }
 
 header h1 {
@@ -38,26 +44,90 @@ header h2 {
     font-weight: bold;
 }
 
-main {
+/* New styles for the diagram layout */
+.diagram-container {
     position: relative;
+    width: 700px; /* Adjust as needed */
+    height: 700px; /* Adjust as needed */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.profile-image img {
-    width: 650px;
-    height: 650px;
-    object-fit: contain;
-    z-index: 10;
+
+
+.small-block {
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 2;
 }
 
-.diagram {
+.small-block.design-strategy {
+    top: 50px;
+    left: 100px;
+    z-index: 2;
+}
+
+.small-block.privacy-security {
+    top: 100px;
+    right: 50px;
+    z-index: 2;
+}
+
+.small-block.user-friendly-design {
+    top: 350px;
+    left: 20px;
+    z-index: 2;
+}
+
+.small-block.front-end {
+    top: 400px;
+    right: 50px;
+    z-index: 2;
+}
+
+.small-block.clean-code {
+    bottom: 50px;
+    left: 200px;
+    z-index: 2;
+}
+
+.small-block.back-end {
+    bottom: 150px;
+    right: 100px;
+    z-index: 2;
+}
+
+.small-block.i-try {
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.main-image-block {
+    width: 650px;
+    height: 650px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.main-image-block img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
